@@ -5,13 +5,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Todo</title>
-    <link rel="stylesheet" href="">
-    <link rel="stylesheet" href="">
-    <script src="function.js"></script>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="function.js" defer></script>
 </head>
 
 <body>
+    <nav class="navbar bg-dark navbar-dark">
+        <div class="container" style="max-width: 600px;">
+            <a href="#" class="navbar-brand">
+                Todo
+                <span class="badge tasks__item  bg-danger ms-1">0</span>
+                <span class="badge done__item bg-secondary ms-1">0</span>
 
+            </a>
+        </div>
+    </nav>
+
+
+    <div class="container" style="max-width: 600px;">
+        <div class="input-group my-4">
+            <input type="text" class="form-control">
+            <button class="btn btn-dark">add</button>
+        </div>
+        <ul class="list-group" id="tasks"></ul>
+        <ul class="list-group mt-5" style="opacity: 0.6;" id="done"></ul>
+    </div>
 </body>
 
 </html>
